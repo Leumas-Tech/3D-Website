@@ -1,0 +1,136 @@
+@import "https://use.typekit.net/jmk3xov.css";
+@import "https://fonts.googleapis.com/css2?family=Exo&display=swap";
+:root {
+  --dark-bg: rgba(15, 15, 15, 0.95);
+  --spacing: 400px;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+main {
+  width: 100vw;
+  color: #fff;
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  padding: 120px 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+h1 {
+  font-family: Exo, sans-serif;
+  font-size: 3rem;
+  padding-top: 3rem;
+}
+h2,
+h3,
+blockquote {
+  font-family: Exo, elevon, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+header {
+  font-family: Exo, sans-serif;
+  text-align: center;
+  background: var(--dark-bg);
+  grid-column: 2 / span 5;
+  font-size: 2.3rem;
+  margin-bottom: var(--spacing);
+}
+section {
+  font-family: Exo, sans-serif;
+  grid-column: 2 / 8;
+  padding: 1rem;
+  background: var(--dark-bg);
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: var(--spacing);
+}
+blockquote {
+  margin: 0;
+  padding: 0;
+  grid-column: 2 / span 9;
+  margin-bottom: var(--spacing);
+}
+blockquote p {
+  color: #000;
+  background-color: #fff;
+  font-size: 4rem;
+  display: inline;
+  line-height: 1;
+}
+.left {
+  grid-column: 6 / 12;
+}
+.last {
+  font-family: Exo, sans-serif;
+  text-align: center;
+  justify-content: center;
+  grid-column: 1 / span 10;
+  font-size: 1rem;
+}
+body::-webkit-scrollbar {
+  width: 0%;
+  height: 0%;
+}
+@media (max-width: 640px) {
+  h1 {
+    font-family: Exo, sans-serif;
+    font-size: 2rem;
+    padding-top: 3rem;
+  }
+  .only {
+    font-size: 1.5rem;
+  }
+  h2,
+  h3,
+  blockquote {
+    font-family: Exo, elevon, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  header {
+    font-family: Exo, sans-serif;
+    text-align: center;
+    background: var(--dark-bg);
+    grid-column: 2 / span 8;
+    font-size: 2.3rem;
+    margin-bottom: var(--spacing);
+  }
+  section {
+    font-family: Exo, sans-serif;
+    grid-column: 2 / 10;
+    padding: 1rem;
+    background: var(--dark-bg);
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: var(--spacing);
+  }
+  blockquote {
+    margin: 0;
+    padding: 0;
+    grid-column: 2 / span 9;
+    margin-bottom: var(--spacing);
+  }
+  blockquote p {
+    color: #000;
+    background-color: #fff;
+    font-size: 2rem;
+    display: inline;
+    line-height: 1;
+  }
+  .left {
+    grid-column: 4 / 12;
+  }
+}
